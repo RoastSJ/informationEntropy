@@ -37,7 +37,7 @@ Entropy1 = informationEntropy((pd.read_excel("data1.xls",header=None)).to_numpy(
 Entropy2 = informationEntropy((pd.read_excel("data2.xls",header=None)).to_numpy())
 print("data1:")
 for k,v in Entropy1.items():
-    print("\t"+k +":"+str(v))
+    print("\t"+k +":"+str(round(v,3)))
 print("data2:")
 for k,v in Entropy2.items():
-    print("\t"+k +":"+str(v))
+    print("\t"+k +":"+str(round(v,3)))
